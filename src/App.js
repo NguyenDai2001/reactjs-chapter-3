@@ -1,11 +1,13 @@
+import { Outlet } from 'react-router-dom';
 import './App.scss';
+import HeaderNav from './components/Header/Header';
 
-const App = () => {
+const App = (props) => {
   return (
     <>
-      <h2 className='test'>aaaaaa</h2>
-      <p>aaa</p>
-      <button className='btn btn-primary'>sss</button>
+      <HeaderNav />
+      <Outlet></Outlet>
+     
     </>
   )
 }

@@ -1,0 +1,31 @@
+
+
+#navigate-customs {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    transition: 1s linear;
+}
+.navbar-brand{
+    display: flex;
+
+    #logo{
+        display: inline-block;
+        margin-right: 15px;
+    }
+    #logoName{
+        display: inline-block;
+        overflow: hidden;
+    }
+    .active{
+            transition: transform 0.5s linear, visibility 0.5s linear;
+            visibility: visible;
+            transform: translateX(0%);
+            
+        }
+    .nonActive{
+                transition: transform 0.5s linear, visibility 0.5s linear;
+                visibility: hidden;
+                transform: translateX(-100%);
+            }
+}
